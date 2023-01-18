@@ -51,7 +51,7 @@ FUNCTION ValidateCPF RETURNS LOGICAL (INPUT pInput AS CHARACTER).
 
 END FUNCTION.
 
-DISPLAY ValidateCPF("650.896.010-54").
-DISPLAY ValidateCPF("650.896.010-51").
-DISPLAY ValidateCPF("65089601054").
-DISPLAY ValidateCPF("65089601051").
+DISPLAY ValidateCPF("650.896.010-54"). // Expected success
+DISPLAY ValidateCPF("650.896.010-51"). // Expected fail
+DISPLAY ValidateCPF("65089601054").    // Expected success
+DISPLAY ValidateCPF("65089601051").    // Expected fail
