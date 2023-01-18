@@ -1,7 +1,6 @@
 USING System.Text.RegularExpressions.*. 
 DEFINE VARIABLE regexp                    AS CLASS Regex                    NO-UNDO.
  
-// REGEX PARA VALIDAR E-MAIL
 regexp = NEW Regex("^[^\x00-\x1F^\(^\)^\<^\>^\@^\,^\;^\:^\\^\~"^\.^\[^\]^\s]+(\.[^\x00-\x1F^\(^\)^\<^\>^\@^\,^\;^\:^\\^\~"^\.^\[^\]^\s]+)*@([^\x00-\x1F^\(^\)^\<^\> ^\@^\,^\;^\:^\\^\~"^\.^\[^\]^\s]+(\.[^\x00-\x1F^\(^\)^\<^\>^\@^\,^\;^\:^\\^\~"^\.^\[^\]^\s]+))+$").
 
 IF regexp:IsMatch("teste@gmail.com")
