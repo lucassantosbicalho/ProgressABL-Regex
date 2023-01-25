@@ -1,7 +1,7 @@
 # ProgressABL-Regex
 
 - Snipcode to validate e-mail using REGEX.
-- Function to validate CPF with verification digit
+- Function to validate CPF with digit verification 
 
 ----
 
